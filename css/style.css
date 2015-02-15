@@ -1,0 +1,354 @@
+#welcome{
+	text-align: right;	
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+/* ---------- GENERAL ---------- */
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eaeaea;
+  color: #999;
+  font: 400 16px/1.5em sans-serif;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1dabb8;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN-FORM ---------- */
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+  font: 87.5%/1.5em sans-serif;
+}
+
+input {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 50px auto;
+	width: 242px;
+}
+
+#login span {
+	color: #676767;
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	width: 36px;
+}
+
+#login input {
+	border: none;
+	height: 48px;
+	outline: none;
+}
+
+#login input[type="text"] {
+	background: #dedede;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 5px 5px 0 0;
+	color: #363636;
+	padding-left: 36px;
+	width: 240px;
+}
+
+#login input[type="password"] {
+	background-color: #dedede;
+	border-top: 1px solid #828282;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-radius: 0 0 5px 5px;
+	color: #363636;
+	margin-bottom: 20px;
+	padding-left: 36px;
+	width: 240px;
+}
+
+#login input[type="submit"] {
+	background: #e14d4d;
+	border: 1px solid #391515;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 240px;
+}
+
+#login input[type="submit"]:hover {
+	background: #f15958;
+}
+
+/* ---------- REGISTER ---------- */
+
+#register {
+  margin: 5px auto;
+
+
+  width: 242px;
+}
+
+#register span {
+  color: #676767;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  position: absolute;
+  text-align: center;
+  width: 36px;
+}
+
+#register input {
+  border: none;
+  height: 48px;
+  outline: none;
+}
+
+#register input[type="text"] {
+  background: #dedede;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-radius: 5px 5px 0 0;
+  color: #363636;
+  padding-left: 36px;
+  width: 240px;
+}
+
+#register input[type="email"] {
+  background: #dedede;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+  border-radius: 0 0 5px 5px;
+  color: #363636;
+  padding-left: 36px;
+    margin-bottom: 20px;
+  width: 240px;
+}
+
+#register input[type="password"] {
+  background-color: #dedede;
+  border-top: 1px solid #828282;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-radius: 0 0 0px 0px;
+  color: #363636;
+  margin-bottom: 0px;
+  padding-left: 36px;
+  width: 240px;
+}
+
+#register input[type="submit"] {
+  background: #e14d4d;
+  border: 1px solid #391515;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 240px;
+}
+
+#register input[type="submit"]:hover {
+  background: #f15958;
+}
+
+#balance {
+  text-align: right;
+  margin-right:5px ;
+  margin-top:-10px;
+  color:black;
+}
+
+/*-----GETBTC-----*/
+#getbtc input[type="submit"] {
+  background: #e14d4d;
+  border: 1px solid #391515;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 240px;
+}
+
+#getbtc input[type="submit"]:hover {
+  background: #f15958;
+}
+
+/*------COPYRIGHT-----*/
+  #copyright {
+background: #172d4f;
+height: 40px;
+width: 100%;
+margin-top: 550px;
+text-align: center;
+color: white;
+overflow: hidden;
+position: absolute;
+bottom: 0;
+}
